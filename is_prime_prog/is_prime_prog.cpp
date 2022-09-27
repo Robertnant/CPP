@@ -1,18 +1,27 @@
 #include <iostream>
 #include "is_prime_prog.h"
 
-void is_prime(int n) {
-    if (n <= 1) {
-        std::cout << n << " is a prime: False" << std::endl;
+/**
+ * Test if a given number is prime using trial division.
+ *
+ * @param number Number to be tested for primality.
+ */
+void is_prime(int number)
+{
+    if (number <= 1)
+    {
+        std::cout << number << " is a prime: False" << std::endl;
         return;
     }
 
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) {
-            std::cout << n << " is a prime: False" << std::endl;
+    for (int tested_int = 2; tested_int * tested_int <= number; tested_int++)
+    {
+        if (number % tested_int == 0)
+        {
+            std::cout << number << " is a prime: False" << std::endl;
             return;
         }
     }
 
-    std::cout << n << " is a prime: True" << std::endl;
+    std::cout << number << " is a prime: True" << std::endl;
 }
