@@ -50,10 +50,12 @@ value Vector::operator*(const Vector& rhs) const {
 
 Vector operator+(const value& s, const Vector& v) {
     Vector sum_vector = Vector(v.size()) + s;
+    return sum_vector;
 }
 
 Vector operator*(const value& s, const Vector& v) {
-    Vector sum_vector = Vector(v.size()) * s;
+    Vector product_vector = Vector(v.size()) * s;
+    return product_vector;
 }
 
 value &Vector::operator[](size_t idx) {
