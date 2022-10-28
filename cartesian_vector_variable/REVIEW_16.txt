@@ -1,0 +1,9 @@
+- Code compile bien à part ce warning qui apparait aux lignes 53 et 57: 
+<< cartesian_vector_variable/vector.cc: In function ‘Vector operator+(const value&, const Vector&)’:
+cartesian_vector_variable/vector.cc:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   53 | }
+   57 | }
+      | ^
+>>
+
+- Pensez à bien indenter les accolades
