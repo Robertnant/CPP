@@ -15,7 +15,7 @@
 
 
 template <class T, class CONT>
-void read_file_to_cont(std::ifstream& f, CONT c) {
+void read_file_to_cont(std::ifstream& f, CONT& c) {
     T element;
 
     while (f >> element) {
