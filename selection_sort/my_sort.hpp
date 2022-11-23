@@ -2,7 +2,7 @@
 // All occurences of XXX need to be replaced with
 // something more meaningful
 
-template <typename T>
+template <class T>
 T container_min(T begin, T end) {
     T min = begin++;
     while (begin != end) {
@@ -14,7 +14,7 @@ T container_min(T begin, T end) {
     return min;
 }
 
-template <typename T>
+template <class T>
 void my_selection_sort(T begin, T end) {
     while (begin != end) {
         T min = container_min(begin, end);
